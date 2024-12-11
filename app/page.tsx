@@ -8,6 +8,7 @@ import { HeroSection } from "@/components/layout/sections/hero";
 import { PricingSection } from "@/components/layout/sections/pricing";
 import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
+import HowItWorksSection from "@/components/layout/sections/stepByStep";
 import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { Meteors } from "@/components/ui/meteors";
@@ -49,6 +50,7 @@ export default function Home() {
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />
+      <HowItWorksSection/>
       <TestimonialSection />
       <TeamSection />
       <CommunitySection />

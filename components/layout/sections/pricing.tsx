@@ -7,6 +7,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Marquee from "@/components/ui/marquee";
+import { MarqueeDemo } from "@/components/ui/marqueeDemo";
 import { Check } from "lucide-react";
 
 enum PopularPlan {
@@ -75,18 +77,18 @@ export const PricingSection = () => {
   return (
     <section className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Pricing
+        Testimonials
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
+      Delivering Excellence To Our Clients
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
+      Countless clients have expressed their satisfaction, emphasizing the transformative impact of our solutions on their success.
       </h3>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+      {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
         {plans.map(
           ({ title, popular, price, description, buttonText, benefitList }) => (
             <Card
@@ -134,7 +136,8 @@ export const PricingSection = () => {
             </Card>
           )
         )}
-      </div>
+      </div> */}
+      <MarqueeDemo/>
     </section>
   );
 };
