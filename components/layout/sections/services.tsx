@@ -17,25 +17,27 @@ interface ServiceProps {
 }
 const serviceList: ServiceProps[] = [
   {
-    title: "Web Development",
+    title: "Fixed Cost Model",
     description:
-      "We offer comprehensive web development services that help businesses achieve experienced developers, we create responsive, visually appealing e, visually appealing websites that provide an exceptional user experience. Our expertise in modern web technologies ensures that your website is functional, secure, and optimized for search engines.",
+      "In a fixed cost model, we agree on a specific set of requirements and deliverables with our clients. We then provide a quote for the entire project based on the agreed-upon scope. The project cost and timeline are fixed, and any changes to the scope or requirements during the project will require a change order. This model works well for clients who have a well-defined project with clear requirements and a fixed budget. It offers predictability and reduces the risk of budget overruns.",
     pro: 0,
   },
   {
-    title: "Mobile App Development",
+    title: "T & M Model",
     description:
-      "Regardless of the type of mobile app you have in mind; we have a solution that fits your business needs. We provide your users with sleek, productive and easy to-use mobile solutions, and they pay you back with increased loyalty and real world engagement. To secure coverage of all dimensions of the solution's quality.",
+      "In the Time and Material (T&M) model, we provide dedicated resources to work on your project. You can hire a team of developers, designers, project managers, or any other skilled professionals as per your requirement. You pay for the time and effort they spend on your project on an hourly or daily basis. You have complete control over the project, and you can scale up or down the team size as per your changing needs. This model works well for clients who require flexibility and want complete control over the project.",
     pro: 0,
   },
   {
-    title: "Web Application Development",
-    description: "We help our customers embrace the mobile-centric web reality and transform their systems into modern cross-platform applications. Drawing from our deep front-end expertise, our web app developers implement the most demanded web app development scenarios by creating functional, convenient, and visually compelling applications",
+    title: "Partner With Us",
+    description:
+      "In the Partner with Us model, we offer a partnership to clients who are looking for a long-term engagement. We collabora-te with you to understand your business objectives and provide qualified and experienced professionals with sound domain knowledge to help you achieve your goals. We work together as a team to develop and deliver solutions that meet your business requirements. This model is suitable for clients who want to build a long-term relationship and are looking for a partner who can help them achie",
     pro: 0,
   },
   {
     title: "Technology Consultancy",
-    description: "We deliver premium, mission-critical corporate solutions that satisfy all of your requirements and help you reach your main business objective. We provide consulting services across the whole IT lifecycle, from software system design, development, and implementation to business process re-engineering",
+    description:
+      "We deliver premium, mission-critical corporate solutions that satisfy all of your requirements and help you reach your main business objective. We provide consulting services across the whole IT lifecycle, from software system design, development, and implementation to business process re-engineering",
     pro: 1,
   },
 ];
@@ -51,7 +53,8 @@ export const ServicesSection = () => {
         Grow Your Business
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      From mobile app development to web development, we have the expertise to help you build innovative solutions and achieve your business goals.
+        From mobile app development to web development, we have the expertise to
+        help you build innovative solutions and achieve your business goals.
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 

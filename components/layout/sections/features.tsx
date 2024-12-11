@@ -11,39 +11,39 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    title: "Website Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "We offer comprehensive web development services that help businesses achieve experienced developers, we create responsive, visually appealing websites that provide an exceptional user experience.",
   },
   {
     icon: "BadgeCheck",
-    title: "Social Proof",
+    title: "Mobile App Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Regardless of the type of mobile app you have in mind we have a solution that fits your business needs. We provide your users with sleek, productive and easy to-use mobile solutions.",
   },
   {
     icon: "Goal",
-    title: "Targeted Content",
+    title: "Web Application Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "We help our customers embrace the mobile-centric web reality and transform their systems into modern cross-platform applications. Drawing from our deep front-end expertise.",
   },
   {
     icon: "PictureInPicture",
-    title: "Strong Visuals",
+    title: "Technology Consultancy",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "We deliver transformative, mission-critical solutions meticulously tailored to your strategic objectives, offering end-to-end expertise across the IT lifecycle—from conceptual design and sophisticated development to seamless implementation and process re-engineering.",
   },
   {
     icon: "MousePointerClick",
-    title: "Clear CTA",
+    title: "UI/UX Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "We’ve been in the business long enough to know that exceptional User Interface & User Experience are the foundations upon which all great products are built. We put in the time and effort to make sure that the look and feel of your product is more than just aesthetic pleasing.",
   },
   {
     icon: "Newspaper",
-    title: "Clear Headline",
+    title: "Project Planning & Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "We provide comprehensive project management services to ensure your initiatives remain on schedule and meet all deliverables. Collaborating closely, we craft detailed project timelines and strategically allocate tasks to optimize time and resources.",
   },
 ];
 
@@ -59,9 +59,8 @@ export const FeaturesSection = () => {
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        Empowering innovation, delivering excellence – we don't just solve
+        problems. We shape the future.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
