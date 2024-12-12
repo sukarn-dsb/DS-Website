@@ -44,13 +44,13 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Meteors/>
+      <Meteors />
       <HeroSection />
       <SponsorsSection />
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />
-      <HowItWorksSection/>
+      <HowItWorksSection />
       <TestimonialSection />
       <TeamSection />
       <CommunitySection />

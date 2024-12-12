@@ -1,3 +1,56 @@
+"use client";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import LampDemo from "@/components/ui/lamp";
+import { ArrowRight } from "lucide-react";
+import { useTheme } from "next-themes";
+import Image from "next/image";
+import Link from "next/link";
+// import { HeroParticles } from "./HeroParticles";
+
+export const HeroSection = () => {
+  const { theme } = useTheme();
+  return (
+    <section className="container w-full">
+      <LampDemo />
+      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-8 md:py-20 bg-transparent">
+        <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-transparent ">
+          <div className="text-center space-y-8">
+            <Badge variant="outline" className="text-sm py-2">
+              <span className="mr-2 text-primary">
+                <Badge>DS</Badge>
+              </span>
+              <span>Designing Solutions </span>
+            </Badge>
+
+            <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
+              <h1>
+                Get the
+                <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
+                  Designing Solutions
+                </span>
+                expertise
+              </h1>
+            </div>
+
+            <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
+              {`We’re more than just a software development company. we’re a community of passionate individuals dedicated to excellence. Join us on an incredible journey as we thrive together and make a positive impact on society.`}
+            </p>
+          </div>
+
+          {/* <div className="relative group mt-14"> */}
+          {/* <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div> */}
+
+          {/* <HeroParticles/> */}
+
+          {/* <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div> */}
+          {/* </div> */}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 // "use client";
 // import { Badge } from "@/components/ui/badge";
 // import { Button } from "@/components/ui/button";
@@ -75,59 +128,3 @@
 //     </section>
 //   );
 // };
-
-"use client";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { useTheme } from "next-themes";
-import Image from "next/image";
-import Link from "next/link";
-// import { HeroParticles } from "./HeroParticles";
-
-export const HeroSection = () => {
-  const { theme } = useTheme();
-  return (
-    <section className="container w-full">
-      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-8 md:py-20 bg-transparent">
-      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-transparent ">
-        <div className="text-center space-y-8">
-          <Badge variant="outline" className="text-sm py-2">
-            <span className="mr-2 text-primary">
-              <Badge>DS</Badge>
-            </span>
-            <span>Designing Solutions </span>
-          </Badge>
-
-          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
-            <h1>
-              Get the
-              <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                Designing Solutions
-              </span>
-              expertise
-            </h1>
-          </div>
-
-          <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`We’re more than just a software development company. we’re a community of passionate individuals dedicated to excellence. Join us on an incredible journey as we thrive together and make a positive impact on society.`}
-          </p>
-
-          
-        </div>
-        
-
-        {/* <div className="relative group mt-14"> */}
-          {/* <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div> */}
-          
-
-          {/* <HeroParticles/> */}
-
-          {/* <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div> */}
-        {/* </div> */}
-        
-      </div>
-      </div>
-    </section>
-  );
-};
