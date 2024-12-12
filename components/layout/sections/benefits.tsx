@@ -13,19 +13,19 @@ const benefitList: BenefitsProps[] = [
     icon: "Blocks",
     title: "Build Brand Trust",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Gain the confidence of your audience and establish lasting relationships. Our proven strategies help build credibility, ensuring that your brand earns trust and loyalty over time.",
   },
   {
     icon: "LineChart",
     title: "More Leads",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Supercharge your lead generation efforts with targeted, actionable strategies. We help you attract qualified leads who are ready to engage with your brand and convert into customers.",
   },
   {
     icon: "Wallet",
     title: "Higher Conversions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Refine your marketing strategy through effective testing and feedback. We help you experiment with new ideas and optimize your campaigns for maximum impact.",
   },
   {
     icon: "Sparkle",
@@ -37,7 +37,7 @@ const benefitList: BenefitsProps[] = [
 
 export const BenefitsSection = () => {
   return (
-    <section id="benefits" className="container py-24 sm:py-32">
+    <section id="benefits" className="container sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
           <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
@@ -46,9 +46,7 @@ export const BenefitsSection = () => {
             Your Shortcut to Success
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+          Unlock the potential of your brand and accelerate your journey to success. Our approach is designed to elevate your business, streamline growth, and help you reach your goals faster. Discover how these powerful strategies can make a lasting impact on your brand's future.
           </p>
         </div>
 
