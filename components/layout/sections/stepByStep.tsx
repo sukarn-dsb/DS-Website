@@ -13,30 +13,30 @@ interface HowItWorksProps {
 const HowItWorksList: HowItWorksProps[] = [
   {
     badgeTitle: "Idea Generation and Incubation",
-    title: "Ignite Ideas and Foster Innovation",
+    title: "Understand Your Needs",
     description:
-      "Brain storming sessions lead to development of broder concept. A foundation for the desired out come is set. The idea is bred and given a shape. It is fed and bred on the planning desk. A broder picture starts to take shape.",
+      "We start by analyzing your business requirements, goals, and challenges to craft a tailored strategy that aligns with your vision.",
     image: "roboto.png",
   },
   {
     badgeTitle: "Engineering",
-    title: "Create an Impact with Every Choice",
+    title: "Plan and Strategize",
     description:
-      "The concept is then given its intended heart and soul. Different aspects of the concepts are planned and made to fir such that is becomes one body one soul. Appropriate tools and technologies are applied to gather all the data and the needed intelligence to engineer a solution to meet the challenge",
+      "Our team designs a comprehensive roadmap, detailing the timeline, deliverables, and resources needed for successful project execution.",
     image: "runner.png",
   },
   {
     badgeTitle: "Team Work and Iteration",
-    title: "Make Every Action Count",
+    title: "Develop and Test",
     description:
-      "The different aspects of the engineered solutions are developed by different teams. Each team deploys their specific expertise. All work in coherence in contributing with equal religious fervor to design and development of the proposed solution. The solution is then tested rigorously, fine-tuned as per observation and outcomes of the stringent quality measures. It is tested time and again to ensure that it covers all aspects, and is a success, as planned.",
+      "Using cutting-edge technologies, we bring your project to life. Rigorous testing ensures the solution is functional, secure, and user-friendly.",
     image: "pacheco.png",
   },
   {
     badgeTitle: "Implementation",
-    title: "Tackle this challenge together",
+    title: "Deliver and Support",
     description:
-      "Plan is then implemented. It is monitored at different stages and phases to check, if the defined milestones are met leading to a successful completion.",
+      "We deliver the final product on time and provide ongoing support to ensure seamless integration and long-term success for your business.",
     image: "gamestation.png",
   },
 ];

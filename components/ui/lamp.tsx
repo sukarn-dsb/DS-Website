@@ -46,7 +46,8 @@ export default function LampDemo() {
         Designing <br /> Solutions
       </motion.h1>
       <motion.div
-        initial={{ opacity: 0, y: 230, x: "-94%" }}
+        // initial={{ opacity: 0, y: 230, x: "-94%" }}
+        initial={{ opacity: 0, y: "40%", x: "-94%" }}
         animate={subheadingControls}
       >
         <FlipWordsDemo />

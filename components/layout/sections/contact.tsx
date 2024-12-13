@@ -69,8 +69,7 @@ export const ContactSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+          Ready to transform your business with innovative solutions? Let’s collaborate!
           </p>
 
           <div className="flex flex-col gap-4">
@@ -80,25 +79,25 @@ export const ContactSection = () => {
                 <div className="font-bold">Find us</div>
               </div>
 
-              <div>742 Evergreen Terrace, Springfield, IL 62704</div>
+              <div>📍 B-506, 513, 514, Fifth Floor, Bestech Business Tower-B, Sector-66, Mohali, Punjab, India.</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Phone />
-                <div className="font-bold">Call us</div>
+                <div className="font-bold">Call us 📞</div>
               </div>
 
-              <div>+1 (619) 123-4567</div>
+              <div>+91 8559003498</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Mail />
-                <div className="font-bold">Mail US</div>
+                <div className="font-bold">Mail US 📝</div>
               </div>
 
-              <div>leomirandadev@gmail.com</div>
+              <div>info@designingsolutions.co.in</div>
             </div>
 
             <div>
