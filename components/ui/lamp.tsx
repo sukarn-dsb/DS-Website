@@ -22,9 +22,9 @@ export default function LampDemo() {
         y: "300%",
         transition: { duration: 1, delay: 0.4 },
       });
-      if (theme === "light") {
+      if (theme == "light") {
         setTimeout(() => {
-          setHeadingColor("text=[#000000]");
+          setHeadingColor("text-[#000000]");
         }, 1500);
       }
       await (headingControls.start({
@@ -51,7 +51,7 @@ export default function LampDemo() {
         initial={{ opacity: 0.5, y: "380%" }}
         animate={headingControls}
         // className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        className={`mt-8 bg-gradient-to-br ${headingColor} py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent dark:text-white md:text-7xl transition-colors duration-1000 ease-in-out,
+        className={`mt-8 bg-gradient-to-br ${headingColor} py-4 bg-clip-text text-left text-4xl font-medium tracking-tight dark:text-white md:text-7xl transition-colors duration-1000 ease-in-out
           ${theme === "light" ? "text-[#000000]" : "text-white"}`}
         // style={{ color: headingColor, transition: "color 2s ease-in-out" }}
       >
