@@ -1,3 +1,4 @@
+import { About } from "@/components/layout/sections/about";
 import { BenefitsSection } from "@/components/layout/sections/benefits";
 import { CommunitySection } from "@/components/layout/sections/community";
 import { ContactSection } from "@/components/layout/sections/contact";
@@ -46,7 +47,8 @@ export default function Home() {
     <>
       <Meteors />
       <HeroSection />
-      <SponsorsSection />
+      {/* <SponsorsSection /> */}
+      <About />
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />

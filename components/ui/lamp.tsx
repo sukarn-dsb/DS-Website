@@ -15,7 +15,8 @@ export default function LampDemo() {
     const sequence = async () => {
       await headingControls.start({
         opacity: 1,
-        y: 530,
+        // y: 530,
+        y: "300%",
         transition: { duration: 1, delay: 0.4 },
       });
       await (headingControls.start({
@@ -38,7 +39,8 @@ export default function LampDemo() {
   return (
     <LampContainer>
       <motion.h1
-        initial={{ opacity: 0.5, y: 650 }}
+        // initial={{ opacity: 0.5, y: 650 }}
+        initial={{ opacity: 0.5, y: "380%" }}
         animate={headingControls}
         // className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent md:text-7xl"
         className="mt-8 bg-gradient-to-br text-white py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent md:text-7xl"
@@ -47,7 +49,7 @@ export default function LampDemo() {
       </motion.h1>
       <motion.div
         // initial={{ opacity: 0, y: 230, x: "-94%" }}
-        initial={{ opacity: 0, y: "40%", x: "-94%" }}
+        initial={{ opacity: 0, y: "40%", x: "-20%" }}
         animate={subheadingControls}
       >
         <FlipWordsDemo />
@@ -138,3 +140,138 @@ export const LampContainer = ({
     </div>
   );
 };
+
+// "use client";
+// import React, { useEffect } from "react";
+// import { motion, useAnimation } from "framer-motion";
+// import { cn } from "@/lib/utils";
+// import { FlipWordsDemo } from "./flipWordsDemo";
+// import { GlobeDemo } from "./globeDemo";
+
+// export default function LampDemo() {
+//   const headingControls = useAnimation();
+//   const subheadingControls = useAnimation();
+//   const globeControls = useAnimation();
+
+//   useEffect(() => {
+//     const sequence = async () => {
+//       await headingControls.start({
+//         opacity: 1,
+//         y: "300%",
+//         transition: { duration: 1, delay: 0.4 },
+//       });
+//       await (headingControls.start({
+//         x: "-120%",
+//         transition: { duration: 1.5, delay: 1 },
+//       }),
+//       subheadingControls.start({
+//         opacity: 1,
+//         y: "50%",
+//         transition: { duration: 2.5, delay: 2.5, ease: "easeInOut" },
+//       }),
+//       globeControls.start({
+//         opacity: 1,
+//         transition: { duration: 2.5, delay: 2.5, ease: "easeInOut" },
+//       }));
+//     };
+//     sequence();
+//   }, [headingControls]);
+
+//   return (
+//     <LampContainer>
+//       {/* Heading */}
+//       <motion.h1
+//         initial={{ opacity: 0.5, y: "380%" }}
+//         animate={headingControls}
+//         className="mt-8 bg-gradient-to-br text-white py-4 bg-clip-text text-left text-2xl font-medium tracking-tight text-transparent sm:text-4xl md:text-5xl lg:text-7xl"
+//       >
+//         Designing <br /> Solutions
+//       </motion.h1>
+
+//       {/* Subheading */}
+//       <motion.div
+//         initial={{ opacity: 0, y: "40%", x: "-20%" }}
+//         animate={subheadingControls}
+//         className="w-full text-center sm:text-left"
+//       >
+//         <FlipWordsDemo />
+//       </motion.div>
+
+//       {/* Globe */}
+//       <motion.div
+//         initial={{ opacity: 0, y: 200, x: 100 }}
+//         animate={globeControls}
+//         className="absolute"
+//         style={{ scale: 1 }}
+//       >
+//         <GlobeDemo />
+//       </motion.div>
+//     </LampContainer>
+//   );
+// }
+
+// export const LampContainer = ({
+//   children,
+//   className,
+// }: {
+//   children: React.ReactNode;
+//   className?: string;
+// }) => {
+//   return (
+//     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden w-full">
+//       {/* Background fading container */}
+//       <motion.div
+//         initial={{ opacity: 1 }}
+//         animate={{
+//           opacity: 0,
+//           transition: { delay: 2.5, duration: 1.5, ease: "easeInOut" },
+//         }}
+//         className={cn(
+//           "absolute inset-0 bg-slate-950 rounded-md z-0",
+//           className
+//         )}
+//       >
+//         {/* Background elements */}
+//         <div className="relative flex w-full items-center justify-center isolate z-0 mt-48 sm:mt-80">
+//           <motion.div
+//             initial={{ opacity: 0.5, width: "10rem" }}
+//             whileInView={{ opacity: 1, width: "20rem" }}
+//             transition={{
+//               delay: 0.3,
+//               duration: 0.8,
+//               ease: "easeInOut",
+//             }}
+//             style={{
+//               backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
+//             }}
+//             className="absolute inset-auto right-1/2 h-32 sm:h-40 w-[20rem] bg-gradient-conic from-cyan-500 via-transparent to-transparent [--conic-position:from_70deg_at_center_top]"
+//           >
+//             <div className="absolute w-full left-0 bg-slate-950 h-20 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
+//             <div className="absolute w-20 h-full left-0 bg-slate-950 bottom-0 z-20 [mask-image:linear-gradient(to_right,white,transparent)]" />
+//           </motion.div>
+//           <motion.div
+//             initial={{ opacity: 0.5, width: "10rem" }}
+//             whileInView={{ opacity: 1, width: "20rem" }}
+//             transition={{
+//               delay: 0.3,
+//               duration: 0.8,
+//               ease: "easeInOut",
+//             }}
+//             style={{
+//               backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
+//             }}
+//             className="absolute inset-auto left-1/2 h-32 sm:h-40 w-[20rem] bg-transparent from-transparent via-transparent to-cyan-500 [--conic-position:from_290deg_at_center_top]"
+//           >
+//             <div className="absolute w-20 h-full right-0 bg-slate-950 bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
+//             <div className="absolute w-full right-0 bg-slate-950 h-20 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
+//           </motion.div>
+//         </div>
+//       </motion.div>
+
+//       {/* Content container */}
+//       <div className="relative z-50 flex flex-col items-center px-4 sm:px-6 lg:px-8 text-center sm:text-left -translate-y-16 sm:-translate-y-32">
+//         {children}
+//       </div>
+//     </div>
+//   );
+// };

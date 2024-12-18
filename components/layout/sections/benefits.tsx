@@ -11,27 +11,27 @@ interface BenefitsProps {
 const benefitList: BenefitsProps[] = [
   {
     icon: "Blocks",
-    title: "Build Brand Trust",
+    title: "Expertise You Can Trust",
     description:
-      "Gain the confidence of your audience and establish lasting relationships. Our proven strategies help build credibility, ensuring that your brand earns trust and loyalty over time.",
+      "With over 17 years of experience, we bring deep industry knowledge and technical skills to deliver innovative solutions that help your business stay competitive.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Tailored Solutions for Every Business",
     description:
-      "Supercharge your lead generation efforts with targeted, actionable strategies. We help you attract qualified leads who are ready to engage with your brand and convert into customers.",
+      "We design solutions to fit your unique business needs, whether it’s building a sleek website, automating processes, or developing powerful mobile apps.",
   },
   {
     icon: "Wallet",
-    title: "Higher Conversions",
+    title: "Cost-Effective and Scalable Services",
     description:
-      "Refine your marketing strategy through effective testing and feedback. We help you experiment with new ideas and optimize your campaigns for maximum impact.",
+      "Our affordable offshore development ensures high-quality services. We provide scalable solutions that grow with your business, offering long-term value.",
   },
   {
     icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    title: "A Commitment to Excellence",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "We prioritize client satisfaction by delivering on time, maintaining clear communication, and offering dedicated support to meet and exceed your expectations.",
   },
 ];
 
@@ -46,7 +46,9 @@ export const BenefitsSection = () => {
             Your Shortcut to Success
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-          Unlock the potential of your brand and accelerate your journey to success. Our approach is designed to elevate your business, streamline growth, and help you reach your goals faster. Discover how these powerful strategies can make a lasting impact on your brand's future.
+            Partnering with Designing Solutions means more than just IT services
+            it’s about achieving your goals with innovative, reliable, and
+            cost-effective solutions.
           </p>
         </div>
 
