@@ -141,11 +141,11 @@ export const Navbar = () => {
         {/* <!-- Desktop --> */}
         <NavigationMenu className="hidden lg:block mx-auto">
           <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-card text-base">
+            {/* <NavigationMenuItem> */}
+              {/* <NavigationMenuTrigger className="bg-card text-base">
                 Features
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
+              </NavigationMenuTrigger> */}
+              {/* <NavigationMenuContent>
                 <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
                   <Image
                     src="https://avatars.githubusercontent.com/u/75042455?v=4"
@@ -170,8 +170,8 @@ export const Navbar = () => {
                     ))}
                   </ul>
                 </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
+              </NavigationMenuContent> */}
+            {/* </NavigationMenuItem> */}
 
             <NavigationMenuItem>
               {routeList.map(({ href, label }) => (
