@@ -16,7 +16,7 @@ export const FlipWords = ({
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
   const [currentColor, setCurrentColor] = useState("text-orange-500");
 
-  const colors = ["text-orange-500", "text-white", "text-green-500"];
+  const colors = ["text-orange-500", "text-blue-500", "text-green-500"];
 
   // thanks for the fix Julian - https://github.com/Julian-AT
   const startAnimation = useCallback(() => {

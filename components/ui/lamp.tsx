@@ -43,7 +43,7 @@ export default function LampDemo() {
         initial={{ opacity: 0.5, y: "380%" }}
         animate={headingControls}
         // className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        className="mt-8 bg-gradient-to-br text-white py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+        className="mt-8 bg-gradient-to-br text-black py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent md:text-7xl dark:text-white"
       >
         Designing <br /> Solutions
       </motion.h1>
