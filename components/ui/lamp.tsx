@@ -1,15 +1,18 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { FlipWords } from "./flip-words";
 import { FlipWordsDemo } from "./flipWordsDemo";
 import { GlobeDemo } from "./globeDemo";
+import { useTheme } from "next-themes";
 
 export default function LampDemo() {
   const headingControls = useAnimation();
   const subheadingControls = useAnimation();
   const globeControls = useAnimation();
+  const [headingColor, setHeadingColor] = useState("text-white");
+  const { theme } = useTheme();
 
   useEffect(() => {
     const sequence = async () => {
@@ -19,6 +22,11 @@ export default function LampDemo() {
         y: "300%",
         transition: { duration: 1, delay: 0.4 },
       });
+      if (theme === "light") {
+        setTimeout(() => {
+          setHeadingColor("text=[#000000]");
+        }, 1500);
+      }
       await (headingControls.start({
         x: "-120%",
         transition: { duration: 1.5, delay: 1 },
@@ -43,7 +51,9 @@ export default function LampDemo() {
         initial={{ opacity: 0.5, y: "380%" }}
         animate={headingControls}
         // className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        className="mt-8 bg-gradient-to-br text-black py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent md:text-7xl dark:text-white"
+        className={`mt-8 bg-gradient-to-br ${headingColor} py-4 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent dark:text-white md:text-7xl transition-colors duration-1000 ease-in-out,
+          ${theme === "light" ? "text-[#000000]" : "text-white"}`}
+        // style={{ color: headingColor, transition: "color 2s ease-in-out" }}
       >
         Designing <br /> Solutions
       </motion.h1>

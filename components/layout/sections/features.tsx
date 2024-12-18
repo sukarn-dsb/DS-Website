@@ -68,11 +68,13 @@ export const FeaturesSection = () => {
           <div key={title}>
             <Card className="h-full bg-background border-0 shadow-none">
               <CardHeader className="flex justify-center items-center">
-                <div className="bg-primary/20 p-2 rounded-full ring-8 ring-primary/10 mb-4">
+                {/* <div className="bg-primary/20 p-2 rounded-full ring-8 ring-primary/10 mb-4"> */}
+                <div className="bg-[#008000] p-2 rounded-full ring-8 ring-[#0F4D0F] mb-4">
                   <Icon
                     name={icon as keyof typeof icons}
                     size={24}
-                    color="hsl(var(--primary))"
+                    // color="hsl(var(--primary))"
+                    color="#5CE65C"
                     className="text-primary"
                   />
                 </div>
