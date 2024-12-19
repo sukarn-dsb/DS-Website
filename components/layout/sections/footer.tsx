@@ -1,6 +1,8 @@
 import { Separator } from "@/components/ui/separator";
 import { ChevronsDownIcon } from "lucide-react";
 import Link from "next/link";
+import Logo from "@/public/Final-logo.svg"
+import Image from "next/image";
 
 export const FooterSection = () => {
   return (
@@ -9,13 +11,13 @@ export const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
-              <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
-
-              <h3 className="text-2xl">Designing Solutions</h3>
+              {/* <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" /> */}
+              <Image src={Logo} alt={""} height={50} width={50} />
+              <h3 className="text-2xl ml-5">Designing Solutions</h3>
             </Link>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 pt-2.5">
             <h3 className="font-bold text-lg">
               <Link href="#contact">
               Contact
@@ -40,7 +42,7 @@ export const FooterSection = () => {
             </div> */}
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 pt-2.5">
           <h3 className="font-bold text-lg">
               <Link href="#team">
               Team
@@ -66,7 +68,7 @@ export const FooterSection = () => {
             </div> */}
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 pt-2.5">
           <h3 className="font-bold text-lg">
               <Link href="#testimonials">
               Testimonials
@@ -92,7 +94,7 @@ export const FooterSection = () => {
             </div> */}
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 pt-2.5">
           <h3 className="font-bold text-lg">
               <Link href="#faq">
               FAQ

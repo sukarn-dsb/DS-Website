@@ -23,6 +23,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
 import { motion, useAnimation } from "framer-motion";
+import Logo from "@/public/Final-logo.svg"
 
 interface RouteProps {
   href: string;
@@ -87,7 +88,8 @@ export const Navbar = () => {
     <motion.div initial={{ opacity: 0 }} animate={navbarControls}>
       <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
         <Link href="/" className="font-bold text-lg flex items-center">
-          <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
+        <Image src={Logo} alt={""} height={50} width={50} className="mx-3 py-1" />
+          {/* <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" /> */}
           Designing Solutions
         </Link>
         {/* <!-- Mobile --> */}
@@ -107,10 +109,11 @@ export const Navbar = () => {
               <div>
                 <SheetHeader className="mb-4 ml-4">
                   <SheetTitle className="flex items-center">
-                    <Link href="/" className="flex items-center">
+                    {/* <Link href="/" className="flex items-center">
                       <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
                       Shadcn
-                    </Link>
+                    </Link> */}
+                    
                   </SheetTitle>
                 </SheetHeader>
 
