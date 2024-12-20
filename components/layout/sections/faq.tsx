@@ -7,38 +7,43 @@ import {
 
 interface FAQProps {
   question: string;
-  answer: string;
+  answer: string | string[];
   value: string;
 }
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free NextJS Shadcn template.",
+    question: "What services does Designing Solutions offer?",
+    answer:
+      "At Designing Solutions, we specialize in a wide range of IT and Telecom services, including website development, eCommerce solutions, mobile and web application development, UI/UX design, software development, technology consultancy, and project management. Our solutions are tailored to meet the unique needs of businesses across industries.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "Why should I choose Designing Solutions for my business needs?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "With over 17 years of experience, we bring a wealth of expertise in IT and Telecom. Our client-centric approach ensures we understand your goals and deliver customized, cost-effective, and high-quality solutions. Our proven offshore development capabilities make us a reliable and affordable partner for businesses globally.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+    question: "How does Designing Solutions ensure project success?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "We follow a structured methodology that includes thorough planning, idea generation, team collaboration, rigorous testing, and seamless implementation. Our experienced team works closely with clients at every stage, ensuring projects are delivered on time, within budget, and aligned with your business objectives.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "What engagement models do you offer?",
+    answer: [
+      "Fixed Cost Model: Best for well-defined projects with a fixed budget.",
+      "Time & Material Model: Ideal for projects requiring flexibility and control.",
+      "Partnership Model: Designed for long-term collaboration and business growth.",
+      "Hourly Model: Perfect for projects with evolving requirements.",
+    ],
     value: "item-4",
   },
   {
-    question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+    question: "What industries does Designing Solutions serve?",
+    answer:
+      "We cater to a diverse range of industries, with particular expertise in IT and Telecom. Our clients span sectors like eCommerce, education, healthcare, real estate, and more. Whether you’re a startup or an enterprise, we have the experience and resources to support your digital transformation journey.",
     value: "item-5",
   },
 ];
@@ -63,7 +68,17 @@ export const FAQSection = () => {
               {question}
             </AccordionTrigger>
 
-            <AccordionContent>{answer}</AccordionContent>
+            <AccordionContent>
+              {Array.isArray(answer) ? (
+                <ul className="list-disc pl-6 space-y-2">
+                  {answer.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{answer}</p>
+              )}
+            </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>

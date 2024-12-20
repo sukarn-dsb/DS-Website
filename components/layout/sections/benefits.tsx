@@ -11,33 +11,33 @@ interface BenefitsProps {
 const benefitList: BenefitsProps[] = [
   {
     icon: "Blocks",
-    title: "Build Brand Trust",
+    title: "Expertise You Can Trust",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "With over 17 years of experience, we bring deep industry knowledge and technical skills to deliver innovative solutions that help your business stay competitive.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Tailored Solutions for Every Business",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "We design solutions to fit your unique business needs, whether it’s building a sleek website, automating processes, or developing powerful mobile apps.",
   },
   {
     icon: "Wallet",
-    title: "Higher Conversions",
+    title: "Cost-Effective and Scalable Services",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Our affordable offshore development ensures high-quality services. We provide scalable solutions that grow with your business, offering long-term value.",
   },
   {
     icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    title: "A Commitment to Excellence",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "We prioritize client satisfaction by delivering on time, maintaining clear communication, and offering dedicated support to meet and exceed your expectations.",
   },
 ];
 
 export const BenefitsSection = () => {
   return (
-    <section id="benefits" className="container py-24 sm:py-32">
+    <section id="benefits" className="container sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
           <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
@@ -46,9 +46,9 @@ export const BenefitsSection = () => {
             Your Shortcut to Success
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Partnering with Designing Solutions means more than just IT services
+            it’s about achieving your goals with innovative, reliable, and
+            cost-effective solutions.
           </p>
         </div>
 
@@ -63,7 +63,8 @@ export const BenefitsSection = () => {
                   <Icon
                     name={icon as keyof typeof icons}
                     size={32}
-                    color="hsl(var(--primary))"
+                    // color="hsl(var(--primary))"
+                    color="green"
                     className="mb-6 text-primary"
                   />
                   <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
