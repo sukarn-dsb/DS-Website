@@ -306,7 +306,7 @@ export const TeamSection = () => {
                 </>
               ))}
 
-              <CardFooter className="space-x-4 mt-auto ml-[-10px]">
+              {/* <CardFooter className="space-x-4 mt-auto ml-[-10px]">
                 {socialNetworks.map(({ name, url }, index) => (
                   <Link
                     key={index}
@@ -317,7 +317,7 @@ export const TeamSection = () => {
                     {socialIcon(name)}
                   </Link>
                 ))}
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           )
         )}
