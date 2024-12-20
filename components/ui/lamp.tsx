@@ -40,7 +40,7 @@ export default function LampDemo() {
           md:[--heading-initial-y:420%] md:[--heading-lift-up-y:320%]
           lg:[--heading-initial-y:380%] lg:[--heading-lift-up-y:320%] lg:[--heading-slide-x:-90%]
           xl:[--heading-initial-y:380%] xl:[--heading-lift-up-y:300%] xl:[--heading-slide-x:-125%]
-          2xl:[--heading-initial-y:350%] 2xl:[--heading-lift-up-y:250%] 2xl:[--heading-slide-x:-150%]
+          2xl:[--heading-initial-y:380%] 2xl:[--heading-lift-up-y:320%] 2xl:[--heading-slide-x:-150%]
           `}
       >
         Designing <br /> Solutions
@@ -70,7 +70,7 @@ export default function LampDemo() {
   md:[--subheading-initial-y:48%] md:[--subheading-final-y:45%]
   lg:[--subheading-initial-y:31%] lg:[--subheading-final-y:41%] lg:[--subheading-initial-x:-8%]
   xl:[--subheading-initial-y:38%] xl:[--subheading-final-y:35%] xl:[--subheading-initial-x:-22%]
-  2xl:[--subheading-initial-y:38%] 2xl:[--subheading-final-y:22%] 2xl:[--subheading-initial-x:-32%]`}
+  2xl:[--subheading-initial-y:38%] 2xl:[--subheading-final-y:40%] 2xl:[--subheading-initial-x:-32%]`}
 >
   <FlipWordsDemo />
 </motion.div>
