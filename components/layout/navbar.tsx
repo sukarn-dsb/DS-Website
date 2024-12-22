@@ -188,7 +188,7 @@ export const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="hidden lg:flex">
+        {/* <div className="hidden lg:flex">
           <ToggleTheme />
 
           <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
@@ -200,7 +200,7 @@ export const Navbar = () => {
               <Github className="size-5" />
             </Link>
           </Button>
-        </div>
+        </div> */}
       </header>
     </motion.div>
   );

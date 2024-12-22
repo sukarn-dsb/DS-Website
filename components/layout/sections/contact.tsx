@@ -108,7 +108,7 @@ export const ContactSection = () => {
 
               <div>
                 <div>Monday - Friday</div>
-                <div>8AM - 4PM</div>
+                <div>09AM - 06PM</div>
               </div>
             </div>
           </div>
