@@ -24,7 +24,7 @@ export const About = () => {
                   A Legacy of Excellence
                 </span>
                 <br />
-                Founded over 17 years ago, Designing Solutions has grown into a
+                Founded over 19 years ago, Designing Solutions has grown into a
                 trusted global provider of innovative technology services. With
                 roots in both Canada and India, we’ve built a reputation for
                 delivering customized solutions that empower businesses across
