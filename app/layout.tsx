@@ -7,8 +7,26 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shadcn - Landing template",
-  description: "Landing template from Shadcn",
+  title: "Designing Solutions | IT & Telecom Experts",
+  description: "Leading IT and Telecom experts offering innovative solutions for businesses. Explore our services to drive your success.",
+  keywords: "IT solutions, Telecom experts, business solutions, innovative IT services, telecom services, technology experts",
+  viewport: "width=device-width, initial-scale=1.0",
+  robots: "index, follow",
+  openGraph: {
+    title: "Designing Solutions | IT & Telecom Experts",
+    description: "Discover how Designing Solutions can revolutionize your business with cutting-edge IT and Telecom solutions.",
+    type: "website",
+    url: "https://designingsolutions.co.in/", // Update with your website URL
+    images: [
+      {
+        url: "/ogimage.png", // Update with your OG image URL
+        width: 520,
+        height: 520,
+        alt: "Designing Solutions - IT & Telecom Experts",
+      },
+    ],
+  },
+
 };
 
 export default function RootLayout({
