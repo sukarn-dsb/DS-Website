@@ -11,6 +11,7 @@ import SunilM from "@/public/SunilM_DS.png";
 import KB from "@/public/Kulbhushan_DS.png";
 import Simran from "@/public/Simran_DS.png";
 import Pankaj from "@/public/Pankaj_DS.png";
+import Harish from "@/public/Harish_DS.jpg";
 import {
   Card,
   CardContent,
@@ -146,6 +147,26 @@ export const TeamSection = () => {
       positions: ["Telecom Network Specialist"],
       fewWords:
         "Brings expertise in network planning, survey analysis, and quality control, delivering tailored solutions for client needs in the Telecom sector.",
+      socialNetworks: [
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        },
+        {
+          name: "Github",
+          url: "https://github.com/leoMirandaa",
+        },
+      ],
+    },
+    {
+      // imageUrl:
+      // "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl: Harish,
+      firstName: "Harish",
+      lastName: "Kumar",
+      positions: ["GIS Manager"],
+      fewWords:
+        "He has 12+ years of experience in GIS development, mobile app testing, and Salesforce development, both in India and internationally. He has managed teams and is proficient in automating tasks using Python and other tools.",
       socialNetworks: [
         {
           name: "LinkedIn",
