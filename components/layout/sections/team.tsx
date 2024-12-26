@@ -2,7 +2,7 @@ import GithubIcon from "@/components/icons/github-icon";
 import LinkedInIcon from "@/components/icons/linkedin-icon";
 import XIcon from "@/components/icons/x-icon";
 import Swaraj from "../../../public/Swaraj2_DS.png";
-import Sunil from "@/public/Sunil_DS.png";
+import Sunil from "@/public/Sunil_DS.jpg";
 import Sandeep from "@/public/Sandeep_DS.png";
 import Ravi from "@/public/Ravi_DS.png";
 import Davinder from "@/public/Davinder_DS.png";
