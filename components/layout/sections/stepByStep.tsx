@@ -1,5 +1,7 @@
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { motion, useAnimation } from "framer-motion";
 
 // Define the type for the props
 interface HowItWorksProps {
@@ -16,28 +18,28 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Understand Your Needs",
     description:
       "We start by analyzing your business requirements, goals, and challenges to craft a tailored strategy that aligns with your vision.",
-    image: "roboto.png",
+    image: "research.svg",
   },
   {
     badgeTitle: "Engineering",
     title: "Plan and Strategize",
     description:
       "Our team designs a comprehensive roadmap, detailing the timeline, deliverables, and resources needed for successful project execution.",
-    image: "runner.png",
+    image: "strategy.svg",
   },
   {
     badgeTitle: "Team Work and Iteration",
     title: "Develop and Test",
     description:
       "Using cutting-edge technologies, we bring your project to life. Rigorous testing ensures the solution is functional, secure, and user-friendly.",
-    image: "pacheco.png",
+    image: "development.svg",
   },
   {
     badgeTitle: "Implementation",
     title: "Deliver and Support",
     description:
       "We deliver the final product on time and provide ongoing support to ensure seamless integration and long-term success for your business.",
-    image: "gamestation.png",
+    image: "support.svg",
   },
 ];
 
@@ -58,7 +60,7 @@ const HowItWorksSection = () => {
         {HowItWorksList.map(({ badgeTitle, title, description, image }, index) => (
           <div
             key={title}
-            className={`flex mb-8 items-center ${index % 2 !== 0 ? 'flex-row-reverse' : ''}`}
+            className={`flex mb-8 my-11 items-center ${index % 2 !== 0 ? 'flex-row-reverse gap-4' : ''}`}
           >
             <Card className="h-full bg-transparent border-0 shadow-none">
               <CardHeader>
@@ -73,11 +75,17 @@ const HowItWorksSection = () => {
               </CardContent>
             </Card>
 
-            <img
+        
+
+<img
               src={image}
               alt={`Image describing ${title}`}
-              className="w-[150px] md:w-[250px] lg:w-[300px] mx-auto -scale-x-100"
+              className="hidden md:block md:w-[250px] lg:w-[300px] mx-auto -scale-x-100"
             />
+
+        
+
+           
             <div
               className={`-z-10 absolute right-0 w-44 h-72 lg:w-64 lg:h-80 rounded-full bg-primary/15 dark:bg-primary/10 blur-3xl ${
                 index % 2 !== 0 ? 'left-0' : ''
