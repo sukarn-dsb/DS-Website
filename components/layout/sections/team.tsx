@@ -98,30 +98,30 @@ export const TeamSection = () => {
         },
       ],
     },
-    {
-      // imageUrl:
-      // "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      imageUrl: Sunil,
-      firstName: "Sunil",
-      lastName: "Negi",
-      positions: ["IT Development Lead"],
-      fewWords:
-        "A highly skilled developer with technological expertise, Sunil oversees and manages the technical aspects of the IT team, ensuring seamless execution and high-quality deliverables.",
-      socialNetworks: [
-        {
-          name: "LinkedIn",
-          url: "https://www.linkedin.com/in/leopoldo-miranda/",
-        },
-        {
-          name: "Github",
-          url: "https://github.com/leoMirandaa",
-        },
-        {
-          name: "X",
-          url: "https://x.com/leo_mirand4",
-        },
-      ],
-    },
+    // {
+    //   // imageUrl:
+    //   // "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //   imageUrl: Sunil,
+    //   firstName: "Sunil",
+    //   lastName: "Negi",
+    //   positions: ["IT Development Lead"],
+    //   fewWords:
+    //     "A highly skilled developer with technological expertise, Sunil oversees and manages the technical aspects of the IT team, ensuring seamless execution and high-quality deliverables.",
+    //   socialNetworks: [
+    //     {
+    //       name: "LinkedIn",
+    //       url: "https://www.linkedin.com/in/leopoldo-miranda/",
+    //     },
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/leoMirandaa",
+    //     },
+    //     {
+    //       name: "X",
+    //       url: "https://x.com/leo_mirand4",
+    //     },
+    //   ],
+    // },
     {
       // imageUrl:
       // "https://images.unsplash.com/photo-1616805765352-beedbad46b2a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
